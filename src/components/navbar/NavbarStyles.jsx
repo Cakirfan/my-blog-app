@@ -8,7 +8,7 @@ export const Navbarr = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.1rem 1rem;
+  padding: 0.1rem 2rem;
   background-color: #000;
   color: #eee;
   box-shadow: 0 3px 3px #000;
@@ -26,7 +26,7 @@ export const DuslerLogo = styled.div`
     background-color: #eee;
     color: #000;
     padding: 0.3rem 1rem;
-    border-radius: 8px;
+    border-radius: 8px 0;
   }
 `;
 
@@ -34,7 +34,7 @@ export const Menu = styled.div`
   display: flex;
   align-items: center;
   gap: 19px;
-  margin-right: 2rem;
+  margin-right: 4rem;
 `;
 
 export const MenuLink = styled(Link)`
@@ -75,11 +75,11 @@ export const MenuImageDiv = styled.div`
 
 export const MenuImageShow = styled.div`
   position: absolute;
-  padding-bottom: .3rem;
-  width: 8rem;
-  height: 6rem;
+  /* padding-bottom: .3rem; */
+  width: 9rem;
+  height: 7rem;
   color: #000;
-  top: 2.8rem;
+  top: 3rem;
   right: -0.8rem;
   border-radius: 9px;
   background-color: green;
@@ -94,13 +94,12 @@ export const MenuImageShow = styled.div`
 export const MenuImageShowLink = styled(MenuLink)`
   width: 100%;
   padding-left: 1rem;
-  padding-bottom: 0.5rem;
   box-sizing: border-box;
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 0;
     outline: none;
-    border-bottom: .07rem solid #eee;
+    border-bottom: none;
   }
 `;
