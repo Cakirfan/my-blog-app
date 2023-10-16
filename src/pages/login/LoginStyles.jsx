@@ -29,6 +29,11 @@ export const LoginInput = styled.input`
   border: none;
   outline: none;
   border-bottom: 2px solid red;
+
+  &:focus {
+    outline: outset;
+    outline-color: orange;
+  }
 `;
 
 export const LoginBtn = styled(Link)`
