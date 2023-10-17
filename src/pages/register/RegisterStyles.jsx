@@ -1,12 +1,11 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const RegisterContainer = styled.div`
-  height: 550px;
+  /* height: 550px; */
   width: 60%;
   max-width: 450px;
   margin: 3rem auto;
-  padding: 2rem;
+  padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -74,8 +73,7 @@ export const BtnGrup = styled.div`
   margin: 0.1rem auto;
 `;
 
-export const RegisterBtn = styled(Link)`
-  text-decoration: none;
+export const RegisterBtn = styled.button`
   text-align: center;
   padding: 0.7rem;
   background-color: orangered;

@@ -13,29 +13,25 @@ import {
 } from "./RegisterStyles";
 import avatar from "../../assets/images/avatar-2.webp";
 import { FcGoogle } from "react-icons/fc";
+import { Link } from "react-router-dom";
 
 const Register = () => {
-  const [name, setName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [password, setPassword] = useState("");
-  const [email, setEmail] = useState("");
+  const [data, setData] = useState({
+    name: "",
+    lastname: "",
+    email: "",
+    password: "",
+  });
+
+  const handleChange = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    setData({ ...data, [name]: value });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Verileri bir nesne içinde toplayabilirsiniz.
-    const userData = {
-      name,
-      lastName,
-      password,
-      email,
-    };
-    console.log(userData);
-
-    // userData nesnesini kullanarak yapmak istediğiniz işlemi gerçekleştirebilirsiniz.
-    // Örneğin, bu verileri bir API'ye göndermek isteyebilirsiniz.
-
-    // console.log("Gönderilecek veriler:", userData);
+    alert(data);
   };
 
   return (
@@ -51,8 +47,8 @@ const Register = () => {
             id="firstName"
             placeholder="Enter Your Name..."
             required
-            value={name}
-            onChange={(e) => setName(e.target.value)}
+            value={data.firstname}
+            onChange={handleChange}
           />
         </FormInputGrup>
         <FormInputGrup>
@@ -63,8 +59,8 @@ const Register = () => {
             id="lastName"
             placeholder="Enter Your Surname..."
             required
-            value={lastName}
-            onChange={(e) => setLastName(e.target.value)}
+            value={data.lastname}
+            onChange={handleChange}
           />
         </FormInputGrup>
         <FormInputGrup>
@@ -75,8 +71,8 @@ const Register = () => {
             id="email"
             placeholder="Enter Your Email..."
             required
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            value={data.email}
+            onChange={handleChange}
           />
         </FormInputGrup>
         <FormInputGrup>
@@ -87,12 +83,14 @@ const Register = () => {
             id="password"
             placeholder="Enter Your Password..."
             required
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            value={data.password}
+            onChange={handleChange}
           />
         </FormInputGrup>
         <BtnGrup>
-          <RegisterBtn type="submit">Register</RegisterBtn>
+          <Link to="/" style={{ width: "100%" }}>
+            <RegisterBtn type="submit">Register</RegisterBtn>
+          </Link>
           <RegisterBtn2 type="button">
             Continue with Google
             <FcGoogle style={{ fontSize: "1.5rem" }} />
