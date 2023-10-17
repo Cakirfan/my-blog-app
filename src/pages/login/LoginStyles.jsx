@@ -23,9 +23,17 @@ export const LoginAvatar = styled.img`
   margin-bottom: 3rem;
 `;
 
+export const FormTitel = styled.h2`
+  font-size: 2rem;
+  margin-top: -0.7rem;
+  margin-bottom: 0.5rem;
+  margin-left: -0.7rem;
+`;
+
+
 export const LoginInput = styled.input`
   padding: 1rem 1rem;
-  width: 80%;
+  width: 70%;
   border: none;
   outline: none;
   border-bottom: 2px solid red;
@@ -41,7 +49,7 @@ export const LoginBtn = styled(Link)`
   text-align: center;
   padding: 0.7rem 1rem;
   background-color: orangered;
-  width: 50%;
+  width: 70%;
   color: #eee;
   font-weight: 600;
   border-radius: 8px;
