@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   BtnGrup,
   FormInput,
@@ -15,20 +15,44 @@ import avatar from "../../assets/images/avatar-2.webp";
 import { FcGoogle } from "react-icons/fc";
 
 const Register = () => {
+  const [name, setName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Verileri bir nesne içinde toplayabilirsiniz.
+    const userData = {
+      name,
+      lastName,
+      password,
+      email,
+    };
+    console.log(userData);
+
+    // userData nesnesini kullanarak yapmak istediğiniz işlemi gerçekleştirebilirsiniz.
+    // Örneğin, bu verileri bir API'ye göndermek isteyebilirsiniz.
+
+    // console.log("Gönderilecek veriler:", userData);
+  };
+
   return (
     <RegisterContainer>
-      <RegisterForm>
-        <RegisterAvatar src={avatar} />
-        <FormTitel>Sign Up</FormTitel>
+      <RegisterAvatar src={avatar} />
+      <FormTitel>Sign Up</FormTitel>
+      <RegisterForm onSubmit={handleSubmit}>
         <FormInputGrup>
           <FormInputLabel htmlFor="firstName">First Name</FormInputLabel>
           <FormInput
             type="text"
             name="firstname"
             id="firstName"
-            className="peer"
             placeholder="Enter Your Name..."
             required
+            value={name}
+            onChange={(e) => setName(e.target.value)}
           />
         </FormInputGrup>
         <FormInputGrup>
@@ -37,9 +61,10 @@ const Register = () => {
             type="text"
             name="lastname"
             id="lastName"
-            className="peer"
             placeholder="Enter Your Surname..."
             required
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
           />
         </FormInputGrup>
         <FormInputGrup>
@@ -48,9 +73,10 @@ const Register = () => {
             type="email"
             name="email"
             id="email"
-            className="peer"
             placeholder="Enter Your Email..."
             required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
         </FormInputGrup>
         <FormInputGrup>
@@ -59,9 +85,10 @@ const Register = () => {
             type="password"
             name="password"
             id="password"
-            className="peer"
             placeholder="Enter Your Password..."
             required
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
           />
         </FormInputGrup>
         <BtnGrup>
