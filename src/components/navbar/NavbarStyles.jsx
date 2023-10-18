@@ -12,6 +12,7 @@ export const Navbarr = styled.div`
   background-color: #000;
   color: #eee;
   box-shadow: 0 3px 3px #000;
+  z-index: 99;
 `;
 
 export const DuslerLogo = styled.div`
