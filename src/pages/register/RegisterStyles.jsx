@@ -8,7 +8,6 @@ export const RegisterContainer = styled.div`
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
-  gap: 15px;
   align-items: center;
   justify-content: center;
   background-color: lightgray;
@@ -18,17 +17,18 @@ export const RegisterContainer = styled.div`
 `;
 
 export const RegisterForm = styled.form`
-  width: 70%;
+  width: 80%;
   display: flex;
+  gap: 1rem;
   flex-direction: column;
-  gap: 15px;
 `;
 
 export const FormTitel = styled.h2`
   font-size: 2rem;
   text-align: center;
+  color: #000;
   margin-top: -0.7rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
   margin-left: -0.7rem;
 `;
 
@@ -41,12 +41,15 @@ export const RegisterAvatar = styled.img`
 `;
 
 export const FormInputGrup = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
   width: 100%;
-  margin-left: -0.7rem;
 `;
 
 export const FormInput = styled.input`
-  padding: 0.5rem 0.7rem;
+  padding: 1rem 1rem;
   width: 100%;
   border: none;
   outline: none;
@@ -61,6 +64,9 @@ export const FormInput = styled.input`
 
 export const FormInputLabel = styled.label`
   font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: -1rem;
+  color: #000;
 `;
 
 export const BtnGrup = styled.div`
@@ -71,6 +77,7 @@ export const BtnGrup = styled.div`
   justify-content: center;
   gap: 0.5rem;
   margin: 0.1rem auto;
+  margin-top: -1rem;
 `;
 
 export const RegisterBtn = styled.button`
