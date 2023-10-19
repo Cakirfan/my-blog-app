@@ -13,6 +13,8 @@ const RankContainer = styled.div`
 
 const RankTitle = styled.h2`
   text-align: center;
+  margin: 0.5rem;
+  font-size: 1.5rem;
 `;
 
 const Box = styled.div`
@@ -22,7 +24,7 @@ const Box = styled.div`
 
 const List = styled.div`
   position: relative;
-  height: 62px;
+  height: 72px;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -48,16 +50,12 @@ const List = styled.div`
 `;
 
 const ImgBox = styled.div`
-  position: relative;
-  width: 60px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
   border-radius: 10px;
   overflow: hidden;
 
   img {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -76,7 +74,7 @@ const Rank = styled.div`
   right: -50px;
   color: #03a9f4;
   transition: 0.5s;
-  font-size: 2em;
+  font-size: 1rem;
 
   small {
     font-weight: 500;
@@ -89,105 +87,15 @@ const Rank = styled.div`
 `;
 
 const H4 = styled.h4`
+  font-size: 1.3rem;
   line-height: 5px;
   font-weight: 600;
 `;
 
 const P = styled.p`
-  font-size: 0.75em;
-  margin-top: -0.5rem;
+  font-size: 1rem;
+  margin-top: .7rem;
 `;
 
 export { RankContainer, RankTitle, Box, List, ImgBox, Content, Rank, H4, P };
 
-/* 
-
-export const RankContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`;
-
-export const RankTitle = styled.h2`
-  text-align: center;
-`;
-
-export const RankList = styled.div`
-  position: relative;
-  display: flex;
-  padding: 10px;
-  border-radius: 10px;
-  margin: 10px 0;
-  cursor: pointer;
-  transition: 0.5s;
-  overflow: hidden;
-  background-color: #fff;
-
-  &:hover {
-    box-shadow: -10px 20px 35px rgba(0, 0, 0, 0.15);
-    transform: scale(1.15);
-    filter: blur(0px);
-    opacity: 1;
-  }
-`;
-
-export const RankBox = styled.div`
-  position: relative;
-  width: 100%;
-  min-width: 350px;
-  margin-right: 2rem;
-
-  &:hover {
-    filter: blur(5px);
-    opacity: 0.25;
-  }
-
-  &:hover + ${RankList} {
-    filter: blur(5px);
-    opacity: 0.25;
-  }
-`;
-
-export const ImgBox = styled.div`
-  position: relative;
-  width: 60px;
-  height: 60px;
-  border-radius: 10px;
-  overflow: hidden;
-  margin-right: 10px;
-`;
-
-export const Image = styled.img`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-`;
-
-export const ListContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #333;
-`;
-
-export const Rank = styled.h2`
-  position: absolute;
-  right: -50px;
-  color: #03a9f4;
-  transition: 0.5s;
-  font-size: 2em;
-`;
-
-export const ContentTitle = styled.h4`
-  line-height: 1.2em;
-  font-weight: 600;
-`;
-
-export const ContentParaf = styled.p`
-  font-size: 0.75em;
-`;
-*/
