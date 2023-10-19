@@ -1,5 +1,5 @@
-import { FaHome, FaUserCircle, FaSignOutAlt } from "react-icons/fa";
-import { BiSolidHelpCircle, BiSolidMessageAltDetail } from "react-icons/bi";
+import { FaHome, FaBlog, FaUserCircle, FaSignOutAlt } from "react-icons/fa";
+import { BiSolidMessageAltDetail } from "react-icons/bi";
 import { RiLockPasswordFill, RiSettings3Fill } from "react-icons/ri";
 
 export const RankData = [
@@ -46,9 +46,9 @@ export const data = [
   },
   {
     id: 2,
-    href: "help",
-    name: "help",
-    icon: <BiSolidHelpCircle className="icon" />,
+    href: "blog",
+    name: "blog",
+    icon: <FaBlog className="icon" />,
   },
   {
     id: 3,
