@@ -81,3 +81,26 @@ export const data = [
     icon: <FaSignOutAlt className="icon" />,
   },
 ];
+
+
+//? Blog Data
+export const blogData = [
+  {
+    id: 1,
+    name: "japan",
+    foto: "img/img1.jpeg",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facere reprehenderit nostrum quaerat cupiditate. Vitae placeat nam officia illo. Voluptatum, tenetur? Adipisci iusto recusandae voluptatem.",
+  },
+  {
+    id: 2,
+    name: "spain",
+    foto: "img/img2.jpeg",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facere reprehenderit nostrum quaerat cupiditate. Vitae placeat nam officia illo. Voluptatum, tenetur? Adipisci iusto recusandae voluptatem.",
+  },
+  {
+    id: 3,
+    name: "peru",
+    foto: "img/img3.jpeg",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facere reprehenderit nostrum quaerat cupiditate. Vitae placeat nam officia illo. Voluptatum, tenetur? Adipisci iusto recusandae voluptatem.",
+  },
+];
