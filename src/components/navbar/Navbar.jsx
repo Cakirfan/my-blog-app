@@ -41,7 +41,7 @@ const Navbar = () => {
           </MenuImageDiv>
         </Menu>
       </Navbarr>
-      <div style={{ height: "55px" }}></div>
+      <div style={{ height: "4.7rem" }}></div>
     </>
   );
 };
