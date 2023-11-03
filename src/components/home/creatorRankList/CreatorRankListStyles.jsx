@@ -15,6 +15,7 @@ const RankTitle = styled.h2`
   text-align: center;
   margin: 0.5rem;
   font-size: 1.5rem;
+  color: black;
 `;
 
 const Box = styled.div`

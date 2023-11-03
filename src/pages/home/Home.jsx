@@ -1,10 +1,12 @@
-import CreatorRankList from "../../components/creatorRankList/CreatorRankList";
+import CreatorRankList from "../../components/home/creatorRankList/CreatorRankList";
+import Bildung from "../../components/home/education/Bildung";
 import { HomeContainer, Image, RankList } from "./HomeStyles";
 
 const Home = () => {
   return (
     <HomeContainer>
       <Image>
+        <Bildung />
         <RankList>
           <CreatorRankList />
         </RankList>

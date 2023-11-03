@@ -10,7 +10,7 @@ import {
   RankContainer,
   RankTitle,
 } from "./CreatorRankListStyles";
-import { RankData } from "../../helpers/data";
+import { RankData } from "../../../helpers/data";
 
 const CreatorRankList = () => {
   return (
